@@ -1,0 +1,11 @@
+{
+  "name": "neurowatch-monorepo-shell",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "dev:backend": "python -m uvicorn app.main:app --reload --port 8000 --app-dir backend",
+    "test:backend": "python -m pytest",
+    "dev": "npm --prefix frontend run dev:all"
+  }
+}
